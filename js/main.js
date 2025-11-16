@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const canvas = document.getElementById('game-canvas');
 
-  Input.initInput();
+  Input.initInput(canvas);
 
   const game = new Game(canvas);
   game.run();

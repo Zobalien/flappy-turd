@@ -11,6 +11,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
   background: linear-gradient(160deg, #4facfe 0%, #00f2fe 100%);
 }
 
@@ -20,10 +22,14 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  width: 100%;
+  max-width: 420px;
 }
 
 #game-canvas {
   display: block;
+  width: 100%;
+  height: auto;
   border-radius: 18px;
   background: #8be1f7;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
@@ -52,5 +58,21 @@ body {
 
 .restart-btn:hover {
   transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .game-wrapper {
+    gap: 12px;
+  }
+
+  .restart-btn {
+    width: 100%;
+    max-width: 320px;
+    font-size: 0.95rem;
+  }
 }
 

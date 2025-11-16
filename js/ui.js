@@ -46,7 +46,7 @@ function drawStartScreen(ctx, width, height) {
   ctx.font = 'bold 36px "Segoe UI", sans-serif';
   ctx.fillText('Flappy Turd', width / 2, height / 2 - 40);
   ctx.font = '24px "Segoe UI", sans-serif';
-  ctx.fillText('Press Space to Start', width / 2, height / 2 + 10);
+  ctx.fillText('Press Space or Tap to Start', width / 2, height / 2 + 10);
   ctx.restore();
 }
 
@@ -62,7 +62,7 @@ function drawGameOver(ctx, width, height, score) {
   ctx.font = '24px "Segoe UI", sans-serif';
   ctx.fillText(`Score: ${score}`, width / 2, height / 2);
   ctx.font = '20px "Segoe UI", sans-serif';
-  ctx.fillText('Press Space to Retry', width / 2, height / 2 + 40);
+  ctx.fillText('Press Space or Tap to Retry', width / 2, height / 2 + 40);
   ctx.restore();
 }
 
